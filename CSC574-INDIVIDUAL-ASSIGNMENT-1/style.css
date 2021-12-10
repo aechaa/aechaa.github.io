@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Parisienne&family=Raleway:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+/*
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Parisienne', cursive;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Carter One', cursive;
+    */
+* {
+  box-sizing: border-box;
+}
+
+/* padding background warna putih */
+body {
+  font-family: 'Raleway', sans-serif;
+  padding: 10px;
+  
+}
+
+/* * * Header * * */
+.header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    color: deeppink;
+    font-family: 'Parisienne', cursive;
+    background-attachment: fixed;
+}
+
+.headerSpotify{  
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    color: #79d279;
+    background-image: url(wallpaper1.jpg) ;
+    background-attachment: fixed;
+}
+
+.headerQuiz{   
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    color: #ccffff;
+    background-image: url("wallpaper2.png");
+    background-attachment: fixed;
+    font-family: 'Carter One', cursive;
+}
+
+.headerAbout{
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    color: aliceblue;
+    background-image: url("wallpaper.png");
+    background-attachment: fixed;
+    color: #000080;
+}
+
+.headerFav{ 
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    color: #994d00;
+    background-image: url("wallpaper2.png") ;
+    width: auto;
+    background-attachment: fixed;
+}
+
+
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 20%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 80%;
+  padding-left: 20px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* * * Container * * */
+.container {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+.container.quiz{
+    background-image: url(https://i.pinimg.com/564x/6f/e6/03/6fe6035e6774d9bbba76be7d3fcaa08a.jpg);
+    
+}
+
+.container.index {
+    background-image: url(https://i.pinimg.com/564x/7f/4b/8f/7f4b8f6049707c49b10bd35ddd32db8e.jpg);
+    text-align: center;
+}
+
+.container.about {
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+}
+
+.container.fav {
+    background-color:#b8b894;
+    text-align: center;
+}
+
+.container.spotify {
+    background-color: #c6ecc6;
+    text-align: center;
+}
+
+/* * * Footer * * */
+.footer {
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer.about{
+      background-color: lightgoldenrodyellow;
+}
+
+.footer.spotify{
+      background-color: #B1F09D;
+}
+
+.footer.index{
+      background-color: #ffcccc;
+}
+
+.footer.quiz{
+    background-color: #ccffff;
+}
+
+.footerfav{
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    background-color: coral;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+p.double {
+    border-style: double;
+    padding: 20px;
+    text-align: center;
+    border-color: deeppink;
+    border-radius: 12px;
+}
+
+p.double.fav {
+    border-style: double;
+    padding: 20px;
+    text-align: center;
+    border-color: coral;
+    border-radius: 12px;
+}
+
+.fav {
+    border-style: double;
+    padding: 10px;
+    text-align: left;
+    border-color: coral;
+    border-radius: 12px;
+}
+
+.spot {
+    border-style: double;
+    padding: 10px;
+    text-align: center;
+    border-color: green;
+    border-radius: 12px;
+}
+
+p.aboutborder {
+    border-style: ridge;
+    padding: 20px;
+    text-align: center;
+    border-color: yellow;
+    border-width: medium;
+    border-right-width: medium;
+    border-radius: 12px;
+    background-color: whitesmoke;
+    opacity: 75%;
+}
+
+
+p.spotifyborder {
+    border-style: dashed;
+    padding: 10px 5px;
+    text-align: center;
+    border-color: darkgreen;
+    border-radius: 12px;
+    background-color: whitesmoke;
+    opacity: 75%;
+}
+
+p.me {
+    border-style: double;
+    padding: 20px;
+    text-align: center;
+    border-color: deeppink;
+    font-size: 30px;
+    border-radius: 8px;
+}
+
+/* Link index */
+a.linkI{
+    text-align: center;
+}
+
+a.linkI:hover {
+    color: lightgrey;
+    transition: 1s;}
+
+
+
+table, th, td {
+    border: 2px dashed brown;
+    border-collapse: collapse;
+    background-color: floralwhite;
+ 
+}
+th, td {
+  padding: 15px;
+}
+
+/*SLIDE IMAGE*/
+
+.mySlides {display: none}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 10000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: orange;
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: auto;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;  
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: auto;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: darkslategrey;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: orange;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: darkblue;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+

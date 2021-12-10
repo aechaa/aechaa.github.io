@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CONTACT</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">   
+</head>
+<body style="background-color:#ffffcc;">
+<!---------------------------------------------------------------------> 
+<div class="headerContact">
+    <h1>CONTACT</h1>
+        <img src="img/IMG_5005.png"; style="width:200px; border-radius:50%; border: 2px dashed#808000; padding:15px;">
+</div>
+<!--------------------------------------------------------------------->
+<div class="row">  
+<!--------------------------------------------------------------------->
+<div class="leftcolumn" >    
+
+    <div class="container contact" style="background-color: white;">
+        <div class="container" style="background-color:  #ffffb3 ; text-align:center;"><br><br>
+                <a class="linkI" href = "homepage.html">[HOMEPAGE]</a><br><br><br>
+                <a class="linkI" href = "about.html">[ABOUT]</a><br><br><br>
+                <a class="linkI" href = "education_work.html">[EDUCATION & WORKING EXPERIENCE]</a><br><br><br>
+                <a class="linkI" href = "contact.html">[CONTACT]</a><br><br><br>
+                <a class="linkI" href = "feedback.html">[FEEDBACK]</a><br><br><br>
+         </div>
+    </div>  
+</div>
+
+<!--------------------------------------------------------------------->     
+<div class="rightcolumn">       
+    <div class="container contact" style="text-align: center; background-image: url(img/grid3.jpg);">
+        <h1>CONTACT</h1>
+       
+        <br>
+        <div class="wrapper" >
+           
+            <div id="error_message">
+               
+            </div>
+            <form action="" id="myform" onsubmit = "return validate();">
+              <div class="input_field">
+                  <input type="text" placeholder="Name" id="name">
+              </div>
+              <div class="input_field">
+                  <input type="text" placeholder="Subject" id="subject">
+              </div>
+              <div class="input_field">
+                  <input type="text" placeholder="Phone" id="phone">
+              </div>
+              <div class="input_field">
+                  <input type="text" placeholder="Email" id="email">
+              </div>
+              <div class="input_field">
+                  <textarea placeholder="Message" id="message"></textarea>
+              </div>
+              <div class="btn">
+                  <input type="submit">
+              </div>
+            </form>
+          </div>
+       
+
+    </div> 
+</div>
+<!------------------------------------------------------------------------------------------------->
+
+    </div>
+    </div>
+<!-------------------------------------------------------------------------------------------------->
+<script>
+    function validate(){
+  var name = document.getElementById("name").value;
+  var subject = document.getElementById("subject").value;
+  var phone = document.getElementById("phone").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+  var error_message = document.getElementById("error_message");
+  
+  error_message.style.padding = "10px";
+  
+  var text;
+  if(name.length < 5){
+    text = "Please Enter valid Name";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(subject.length < 10){
+    text = "Please Enter Correct Subject";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(isNaN(phone) || phone.length != 10){
+    text = "Please Enter valid Phone Number";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(email.indexOf("@") == -1 || email.length < 6){
+    text = "Please Enter valid Email";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if(message.length <= 50){
+    text = "Please Enter More Than 50 Characters";
+    error_message.innerHTML = text;
+    return false;
+  }
+  alert("Form Submitted Successfully!");
+  return true;
+}
+</script>
+</body>
+</html>

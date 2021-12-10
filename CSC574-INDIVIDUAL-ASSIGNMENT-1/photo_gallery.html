@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GALLERY</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="style.css">
+   
+
+</head>
+<body style="background-color: #ebebe0;">
+<!--------------------------------------------------------------------->
+<div class="headerFav">
+  <h1>GALLERY</h1>
+  <img src="IMG_5005.png"; style="width:200px; border-radius:50%; border: 2px dashed #fdebb4; padding:15px;">
+</div>
+<!--------------------------------------------------------------------->
+<div class="row">
+<!--------------------------------------------------------------------->    
+  <div class="leftcolumn" >
+      <div class="container fav">
+      <div class="container" style="text-align:center;">
+        <p>CLICK HERE TO GO TO OTHER PAGES !!</p>
+              <a class="linkI" href = "index.html">
+                  <img border="0" alt="homepage" src="home.jpg" width="100px" height="100px" style="width:100px; border-radius:50%; border: 2px dashed aliceblue; padding:5px;"></a><br>[HOMEPAGE]<br><br>
+              <a class="linkI" href = "photo_gallery.html">
+                  <img border="0" alt="gallery" src="gallery.png" width="100px" height="100px" style="width:100px; border-radius:50%; border: 2px dashed aliceblue; padding:5px; filter:grayscale(100%);"></a><br>[GALLERY]<br><br>
+              <a class="linkI" href = "about_us.html">
+                  <img border="0" alt="about_us" src="about.jpg" width="100px" height="100px"style="width:100px; border-radius:50%; border: 2px dashed aliceblue; padding:5px;"></a><br>[ABOUT]<br><br>
+
+      </div>
+          </div>
+ <!--------------------------------------------------------------------->     
+  </div>
+  <div class="rightcolumn">
+    <div class="container" style="background-color:#ccccb3; text-align: center" >
+      <h2 style="text-align: center">Hello </h2>
+        <img src="girl1.gif" width="200px">
+      <div >
+      <p class="double fav" style="background-color:white">
+            Here, I would like to share with you some of my personal pictures<br>
+          
+            I wish you can enjoy your journey here !<br>
+                                    - Love, Aishah
+        </p>
+          </div>
+    </div>
+   
+
+<!--------------------------------------------------------------------->      
+    <div class="slideshow-container" style="text-align: center; background-color:#c2c2a3;">
+        <h2><br>My Favourite Photos</h2>        
+        <br>
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 6</div>
+          <img src="DSC_0887.jpg" style="width:70%">
+          <div class="text">Cheonggyecheon Stream</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 6</div>
+          <img src="DSC_1086.JPG" style="width:70%">
+          <div class="text">Nami Island</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 6</div>
+          <img src="DSC_0807.jpg" style="width:70%">
+          <div class="text">Gyeongbokgung Palace</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+            <img src="DSC_0933.JPG" style="width:70%">
+            <div class="text">Hanok Bukcheon Village</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+            <img src="DSC_0867.JPG" style="width:70%">
+            <div class="text">Gwanghwamun Plaza</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <img src="DSC_0167.JPG" style="width:70%">
+            <div class="text">Gwangjang Market</div>
+          </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+<br>
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclicks="currentSlide(4)"></span> 
+        <span class="dot" onclicks="currentSlide(5)"></span> 
+        <span class="dot" onclicks="currentSlide(6)"></span> 
+
+
+        <p>
+            Those are my fav pictures when I was on trip with my family<br>
+        </p>
+        <br><br>
+</div>   
+  </div>
+</div>
+
+<!--SCRIPT-->    
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<!--------------------------------------------------------------------->    
+</body>
+</html>

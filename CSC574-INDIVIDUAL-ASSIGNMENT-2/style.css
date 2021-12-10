@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Parisienne&family=Raleway:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+/*
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Parisienne', cursive;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Carter One', cursive;
+    */
+* {
+  box-sizing: border-box;
+}
+
+/* padding background warna putih */
+body {
+  font-family: 'Raleway', sans-serif;
+  padding: 10px;
+  
+}
+
+/*---------------------Header----------------------------*/
+.header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    color: deeppink;
+    font-family: 'Parisienne', cursive;
+    background-attachment: fixed;
+}
+.headerHomepage{
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    color: aliceblue;
+    background-image: url("img/wallpaper.png");
+    background-attachment: fixed;
+    color: #000080;
+}
+.headerAbout{ 
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    color: #994d00;
+    background-image: url("img/wallpaper2.png") ;
+    width: auto;
+    background-attachment: fixed;
+}
+.headerEdu{  
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    color: #267326;
+    background-image: url("img/wallpaper1.jpg");
+    background-attachment: fixed ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.headerContact{ 
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    color: #808000;
+    background-image: url("img/wallpaper3.jpg") ;
+    width: auto;
+    background-attachment: fixed;
+}
+.headerFeedback{ 
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    color: #ff4d4d;
+    background-image: url("img/wallpaper4.jpg") ;
+    width: auto;
+    background-attachment: fixed;
+}
+
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 20%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 80%;
+  padding-left: 20px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*---------------------Container----------------------------*/
+.container {
+   padding: 20px;
+   margin-top: 20px;
+}
+
+.container.homepage {
+    text-align: center;
+}
+
+.container.about {
+    text-align: center;
+}
+.container.edu {
+    text-align: center;
+}
+.container.contact {
+    text-align: center;
+}
+.container.feedback {
+    text-align: center;
+}
+/*---------------------Skills--------------------------------*/
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  padding-right: 20px;
+  padding-left:  20px;
+  padding-bottom:  10px;
+  
+}
+.skills .progress .skill {
+  padding: 10px 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #222222;
+}
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+.skills .progress-bar-wrap {
+  background: #f3f3f3;
+}
+.skills .progress-bar {
+  height: 10px;
+  transition: 0.9s;
+  background-color: #34b7a7;
+}
+
+/*---------------------Resume----------------------------*/
+
+.resume-title {
+  font-size: 26px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #222222;
+}
+.resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  position: relative;
+}
+.resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #1d685f;
+  margin-bottom: 10px;
+}
+.resume-item h5 {
+  font-size: 16px;
+  background: #effbf9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #34b7a7;
+}
+.resume-item ul {
+  padding-left: 20px;
+}
+.resume-item ul li {
+  padding-bottom: 10px;
+}
+.resume-item:last-child {
+  padding-bottom: 0;
+}
+
+/*----------------------Contact------------------------*/
+container.contact.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 350px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px rgba(254,236,164,1); 
+
+}
+
+.wrapper h2{
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #332902;
+}
+
+.wrapper .input_field{
+  margin-bottom: 10px;
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper textarea{
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  padding: 10px;
+}
+
+.wrapper textarea{
+  resize: none;
+  height: 80px;
+}
+
+.wrapper .btn input[type="submit"]{
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background: #fece0c;
+  color: #332902;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#error_message{
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+/*---------------------------------------------------*/
+p.aboutborder {
+    border-style: ridge;
+    padding: 20px;
+    text-align: center;
+    border-color: yellow;
+    border-width: medium;
+    border-right-width: medium;
+    border-radius: 12px;
+    background-color: whitesmoke;
+    opacity: 75%;
+}
+p.homepageborder {
+    border-style: ridge;
+    padding: 20px;
+    text-align: center;
+    border-color: yellow;
+    border-width: medium;
+    border-right-width: medium;
+    border-radius: 12px;
+    background-color: whitesmoke;
+    opacity: 75%;
+}
+
+/* Link index */
+a.linkI{
+    text-align: center;
+}
+
+table, th, td {
+    border: 2px dashed brown;
+    border-collapse: collapse;
+    background-color: floralwhite;
+ 
+}
+th, td {
+  padding: 15px;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
